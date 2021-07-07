@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="148dp"
+        android:text="أهلاً بصديقنا المتبرع"
+        android:textColor="#faa34a"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="202dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/img2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboveline2"
+        app:layout_constraintVertical_bias="1.0"></ImageView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPersonName"
+        android:text="صالح محمد"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img1"
+        app:layout_constraintStart_toStartOf="@+id/img1"></EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="اسم المتبرع: "
+        android:textColor="#faa34a"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/img1"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@+id/img1" />
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="202dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboveline2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="رقم الجوال: "
+        android:textColor="#faa34a"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/img2"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toTopOf="@+id/img2" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="0599872666"
+        android:textAlignment="viewEnd"
+        android:textSize="8dp"
+        app:layout_constraintStart_toStartOf="@+id/img2"
+        app:layout_constraintTop_toTopOf="@+id/img2" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="202dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img2"></ImageView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:text="1111875597"
+        android:textAlignment="viewEnd"
+        android:textSize="8dp"
+        app:layout_constraintStart_toStartOf="@+id/img3"
+        app:layout_constraintTop_toTopOf="@+id/img3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="رقم الهوية/ الإقامة: "
+        android:textColor="#faa34a"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/img3"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toTopOf="@+id/img3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="76dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/user1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="97dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboveline2"
+        app:srcCompat="@drawable/ectangle" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="44dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/blooddrop" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:text="B+"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <View
+        android:id="@+id/aboveline"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="252dp"
+        android:background="#BDBCBC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/aboveline2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="#BDBCBC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="340dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboveline"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="304dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:srcCompat="@drawable/outline" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:text="معلومات موعدك"
+        android:textColor="#faa34a"
+        app:layout_constraintBottom_toTopOf="@+id/aboveline"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="19dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/aboveline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/checklist" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="14dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="4dp"
+        android:text="الوقت المتبقي للتبرع بالدم القادم"
+        android:textColor="#147aa9"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/squarebutton"
+        android:text="حجز موعد"
+        android:textSize="11dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/aboveline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="4dp"
+        android:text="الوقت المتبقي للتبرع بمشتقات الدم القادم"
+        android:textColor="#147aa9"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img3" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="14dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/img3"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="50dp"
+        android:layout_height="101dp"
+        android:layout_marginEnd="180dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.346"
+        app:srcCompat="@drawable/line" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456"
+        tools:progress="60" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/progress_bar"
+        />
+
+    <TextView
+        android:id="@+id/text_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/progress_bar"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="80dp"
+        android:layout_height="17dp"
+        android:layout_marginStart=".5dp"
+        android:layout_marginTop="20dp"
+        android:text="آخر تبرع لك "
+        android:textColor="#147AA9"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/background" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="0dp"
+        android:text="مايو 15 ، 2021 "
+        android:textColor="#147AA9"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <!--- Second timer -->
+
+    <ProgressBar
+        android:id="@+id/progress_bar2"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:progress="60" />
+
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/background"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar2"
+        app:layout_constraintTop_toTopOf="@+id/progress_bar2" />
+
+    <TextView
+        android:id="@+id/text_view_progress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_bar2"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar2"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar2"
+        app:layout_constraintTop_toTopOf="@+id/progress_bar2"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="80dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="آخر تبرع لك "
+        android:textColor="#147AA9"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="28dp"
+        android:text="مايو 15 ، 2021 "
+        android:textColor="#147AA9"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

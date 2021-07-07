@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="290dp"
+    android:layout_height="100dp"
+    android:background="@drawable/rectangle"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginLeft="7dp"
+    android:backgroundTint="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="الخميس ، يونيو 24 ، 2021"
+        android:textColor="#147AA9"
+        app:layout_constraintStart_toEndOf="@+id/time"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="08:30 ص"
+        android:textColor="#147AA9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="نوع التبرع :"
+        android:textColor="#147AA9"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintStart_toEndOf="@+id/donateType" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="20dp"
+        android:text="الغاء"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/location" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:text="تعديل"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toEndOf="@+id/cancel" />
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blur" />
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toEndOf="@+id/donate"
+        app:layout_constraintTop_toBottomOf="@+id/icon1"
+        app:layout_constraintVertical_bias="0.692"
+        app:srcCompat="@drawable/blur" />
+
+    <TextView
+        android:id="@+id/donateType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="4dp"
+        android:text="تبرع بالدم"
+        android:textColor="#147AA9"
+        app:layout_constraintBottom_toTopOf="@+id/cancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/map" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/clapicon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/aboveline"
+        app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/clapping" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
+        android:text="مبارك أنت مؤهل للتبرع بالدم "
+        android:textColor="#FAA43A"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/aboveline"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <View
+        android:id="@+id/aboveline"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+
+        android:layout_marginBottom="36dp"
+        android:background="#BDBCBC"
+        app:layout_constraintBottom_toTopOf="@+id/donatetitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/donateicon"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/chooseDate"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/donatetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="20dp"
+        android:text="متى تريد ان تتبرع؟"
+        android:textColor="#147aa9"
+        app:layout_constraintBottom_toTopOf="@+id/chooseDate"
+        app:layout_constraintEnd_toStartOf="@+id/donateicon"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/chooseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text=" اختر التاريخ : "
+        app:layout_constraintBottom_toTopOf="@+id/datePicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toEndOf="@+id/choosetime" />
+
+    <TextView
+        android:id="@+id/choosetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="20dp"
+        android:text=" اختر الوقت :"
+        app:layout_constraintBottom_toTopOf="@+id/timePicker"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/datePicker"
+        android:layout_width="173dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toEndOf="@+id/timePicker"
+        app:srcCompat="@drawable/rectangle">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/calicon"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/date"
+        app:layout_constraintStart_toStartOf="@+id/datePicker"
+        app:layout_constraintTop_toTopOf="@+id/datePicker"
+        app:layout_constraintVertical_bias="0.615"
+        app:srcCompat="@drawable/calendar" />
+
+    <View
+        android:id="@+id/linecal"
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+
+        android:background="#FAA43A"
+        app:layout_constraintBottom_toBottomOf="@+id/datePicker"
+        app:layout_constraintEnd_toEndOf="@+id/datePicker"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="@+id/datePicker"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="101dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/calicon"
+        app:layout_constraintTop_toTopOf="@+id/datePicker" />
+
+    <ImageView
+        android:id="@+id/timePicker"
+        android:layout_width="173dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rectangle">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/timeicon"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/linetime"
+        app:layout_constraintStart_toStartOf="@+id/timePicker"
+        app:layout_constraintTop_toTopOf="@+id/timePicker"
+        app:srcCompat="@drawable/aa" />
+
+    <View
+        android:id="@+id/linetime"
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FAA43A"
+        app:layout_constraintBottom_toBottomOf="@+id/timePicker"
+        app:layout_constraintEnd_toEndOf="@+id/timePicker"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="@+id/timePicker" />
+
+    <Spinner
+        android:id="@+id/timespinner"
+        android:layout_width="101dp"
+        android:layout_height="22dp"
+        android:background="@drawable/rectangle"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/linetime"
+        app:layout_constraintEnd_toEndOf="@+id/timePicker"
+        app:layout_constraintStart_toEndOf="@+id/timeicon"
+        app:layout_constraintTop_toTopOf="@+id/timePicker" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="40dp"
+        android:background="#BDBCBC"
+        app:layout_constraintBottom_toTopOf="@+id/typetitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/typetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="من فضلك اختر نوع التبرع  "
+        android:textColor="#147aa9"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toStartOf="@+id/icon"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="205dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/rectangle"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/white"
+            android:buttonTint="#727070"
+            android:checked="true"
+            android:layoutDirection="rtl"
+            android:text=" التبرع بالدم"
+            android:textAlignment="textStart"
+            android:textColor="#FAA43A"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/white"
+            android:buttonTint="#727070"
+            android:checked="false"
+            android:layoutDirection="rtl"
+            android:text=" التبرع بمشتقات الدم"
+            android:textAlignment="textStart"
+            android:textColor="#FAA43A"
+            android:textSize="12sp"
+
+            >
+
+
+        </RadioButton>
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:buttonTint="#727070"
+            android:textAlignment="textStart"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#FAA43A"
+            android:textSize="10sp"
+            android:layoutDirection="rtl"
+            android:text="  التبرع بالصفائح الدموية" />
+
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:buttonTint="#727070"
+            android:textAlignment="textStart"
+            android:textColor="#FAA43A"
+            android:textSize="10sp"
+            android:text="   التبرع ببلازما الدم "
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layoutDirection="rtl"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="218dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="96dp"
+        android:text="تأكيد حجز الموعد "
+        android:shadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

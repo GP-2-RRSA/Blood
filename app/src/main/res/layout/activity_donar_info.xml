@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    android:backgroundTint="#99FFFFFF"
+    android:backgroundTintMode="src_over"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:padding="30dp"
+        android:background="#40000000"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="التسجيل كمتبرع"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="اسم المتبرع"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textColorHint="@color/darkgary" />
+
+        <Spinner
+            android:id="@+id/bloodType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_sppiner"
+            android:drawSelectorOnTop="true"
+            android:gravity="center|start"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/reg3_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/register_button"
+            android:hint="التسجيل"
+            android:textColorHint="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
