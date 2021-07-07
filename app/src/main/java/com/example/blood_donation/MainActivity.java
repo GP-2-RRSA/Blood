@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -50,7 +51,11 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                     // EndDate
-                    Date EndDate = dateFormat.parse("2021-8-20");
+                    Date EndDate = dateFormat.parse("2021-7-7");
+                    //long testtime=EndDate.getTime()+4*24*60*60*1000;
+                    // Date today4=new Date(testtime);
+
+
                     Date currentDate = new Date();
                     if (!currentDate.after(EndDate)) {
                         long diff = EndDate.getTime() - currentDate.getTime();
@@ -61,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         progress_bar.setProgress((int)progress);
                         //String x=String.format("%02d", days);
                         text_view_progress.setText(days+" يوم");
+
                     } else {
                         text_view_progress.setText("مؤهل الآن للتبرع");
                     }
