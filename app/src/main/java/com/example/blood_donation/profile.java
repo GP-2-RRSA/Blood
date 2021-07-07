@@ -32,6 +32,14 @@ public class profile {
       this.donorPhoneNum = donorPhoneNum;
    }
 
+   public void setLastBloodDonationDate(String lastBloodDonationDate) {
+      this.lastBloodDonationDate = lastBloodDonationDate;
+   }
+
+   public void setLastPlateletsDonationDate(String lastPlateletsDonationDate) {
+      this.lastPlateletsDonationDate = lastPlateletsDonationDate;
+   }
+
    public String getDonorBloodType() {
       return donorBloodType;
    }
@@ -46,5 +54,12 @@ public class profile {
 
    public String getDonorPhoneNum() {
       return donorPhoneNum;
+   }
+
+   public String getLastBloodDonationDate() {
+      return lastBloodDonationDate;
+   }
+   public String getLastPlateletsDonationDate() {
+      return lastPlateletsDonationDate;
    }
 }
